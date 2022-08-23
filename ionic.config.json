@@ -1,0 +1,7 @@
+{
+  "name": "Brazil_burger",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

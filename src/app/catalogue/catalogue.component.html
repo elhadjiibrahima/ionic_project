@@ -1,0 +1,15 @@
+<ion-content  appParallaxHeader [scrollEvents]="true">
+  <div class="parallax" [style.background-image]="'url(' + urlImage + ')'"></div>
+<div class="sous_para">
+  <ion-card *ngFor="let burger of burgers">
+    <img  [src]="transform(burger.photo)" (click)="detailBurger()"/>
+    <ion-card-header>
+      <ion-card-subtitle>{{burger.nom}}</ion-card-subtitle>
+      <ion-card-title>{{burger.prix}}</ion-card-title>
+    </ion-card-header>
+    <ion-button (click)="detailBurger()">Ajouter AU panier</ion-button>
+    <ion-card-content></ion-card-content>
+  </ion-card>
+</div>
+  
+</ion-content>
